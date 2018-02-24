@@ -1,0 +1,42 @@
+/* HTML tags */
+body {
+  background-color: #eee;
+  margin: 0;
+}
+table>tbody>tr>th,
+table>tbody>tr>td {
+  vertical-align: middle !important;
+}
+
+/* Main */
+.contents {
+  margin: 20px auto;
+  width: 512px;
+}
+.canvas-wrapper {
+  position: relative;
+  width: 100%;
+}
+.canvas-wrapper:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Utilities */
+.clearfix:before {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
